@@ -15,11 +15,8 @@ function App() {
   const [color, setColor] = useState();
 
   const changeColor= ()=>{
-     if(RSec<11 && RSec>0){
+     if(RSec<11 && RSec>0 && RMin === 0 && RHours === 0){
       setColor("tensec")
-    }
-    else if(RSec === 0){
-      setColor("default");
     }
     else{
       setColor("default")

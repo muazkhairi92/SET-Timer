@@ -28,7 +28,7 @@ function ShowNum({children = '0',remain,text}){
         >
        
         {/* {props.children || "default"} */}
-        {children}
+        {children.toString().padStart(2,"0")}
         <h3>{text}</h3>
         </div>
 
